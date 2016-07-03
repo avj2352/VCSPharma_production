@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>VCS PHARMA</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/icon" href="assets/images/favicon/favicon.ico"/>
+  <!-- Font Awesome -->
+  <link href="assets/css/font-awesome.css" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <!-- Slick slider -->
+  <link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
+  <!-- Fancybox slider -->
+  <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen" />
+  <!-- Animate css -->
+  <link rel="stylesheet" type="text/css" href="assets/css/animate.css"/>
+  <!-- Theme color -->
+  <link href="assets/css/default.css" rel="stylesheet">
+  <link href="assets/css/preloader.css" rel="stylesheet">
+  <!-- Main Style -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- Fonts -->
+  <!-- Open Sans for body font -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <!-- Raleway for Title -->
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <!-- Pacifico for 404 page   -->
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <!-- assets\css\flexslider.css -->
+</head>
+<body ng-app="myApp">
+  <!-- BEGIN PRELOADER -->
+  <div id="preloader">
+    <div class="loader">&nbsp;</div>
+  </div>
+  <!-- END PRELOADER -->
+  <!-- SCROLL TOP BUTTON -->
+  <a class="scrollToTop" href="#"><i class="fa fa-chevron-up"></i></a>
+  <!-- END SCROLL TOP BUTTON -->
+  <!-- Start header section -->
+  <header id="header">
+    <div class="header-inner">
+      <!-- Header image -->
+      <!-- <img class="changeBackground" src="assets/images/header-bg.jpg" alt="img"> -->
+      <img class="changeBackground background1">
+      <div class="header-overlay">
+        <div class="header-content">
+          <!-- Start header content slider -->
+          <img class="headingBanner" src="assets/images/vcs_logo_bw.png" alt="VCS Logo White" />
+          <h2 class="header-slide">
+            <span>CARING FOR LIFE</span>
+            <span>BEST SERVICE</span>
+            <span>HEALTH CARE NEEDS</span>
+            <span>MOST TRUSTED</span>
+          </h2>
+          <!-- End header content slider -->
+          <!-- Header btn area -->
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End header section -->
+
+  <!-- Start menu section -->
+  <section id="menu-area">
+    <nav class="navbar navbar-default main-navbar" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- LOGO -->
+          <a class="navbar-brand logo" href="index.html"><img src="assets/images/vcs_favicon_logo.png" alt="logo"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav main-nav menu-scroll">
+            <li class="active"><a href="index.html">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#call-to-action">PRODUCT</a></li>
+            <li><a href="#service">THERAPIES</a></li>
+            <li><a href="#careers">CAREER</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+  </section>
+  <!-- End menu section -->
+
+  <!-- Start service section -->
+  <section id="about" ng-controller="mainController">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="service-area">
+            <div class="title-area">
+              <h2 class="tittle mainTitleHeader">Welcome to <span>VCS Pharmaceutical</span></h2>
+              <span class="tittle-line"></span>
+              <p>
+                VCS Pharmaceutical formerly known as Eron Pharmaceutical, came into existence in the year 2012,
+                from the early stages of growth till today, the company has grown at a whopping rate of 316% quarterly.
+              </p>
+            </div>
+          </div><!-- service-area -->
+        </div><!-- col-md-12 -->
+        <!-- Services in about us Section -->
+        <!-- About Us Section -->
+        <div class="col-md-12">
+          <div class="about-area">
+            <!-- isMoreAboutUs = false -->
+            <div class="row" ng-if="!(isMoreAboutUs)">
+              <div class="col-md-5 col-sm-6 col-xs-12">
+                <div class="about-left wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+                  <img src="assets/images/aboutUs.png" alt="About us image">
+                  <!-- <a class="introduction-btn" href="#">Introduction</a> -->
+                </div>
+              </div>
+              <div class="col-md-7 col-sm-6 col-xs-12">
+                <div class="about-right wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+                  <div class="title-area">
+                    <h2 class="tittle">About <span>VCS Pharmaceutical</span></h2>
+                    <span class="tittle-line"></span>
+                    <p>Setting the Industry bench mark for best recruitment in all around operation is the endeavor of the company, and the stable platform for such huge growth is provided by the brilliant TEAMWORK, which the VCS team stands for....</p>
+                    <div class="about-btn-area">
+                      <a class="button button-default" data-text="KNOW MORE" ng-click="moreAboutUs()"><span>KNOW MORE</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end:isMoreAboutUs = false -->
+            <!-- isMoreAboutUs = true -->
+            <div class="row" ng-if="isMoreAboutUs">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="title-area wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+                  <h2 class="tittle">About <span>VCS Pharmaceutical</span></h2>
+                  <span class="tittle-line"></span>
+                  <p>
+                    VCS follows the strict regime of fast Administrative Decision Directive (ADD), which in turn results in increasing the on ground
+                    performance of VCS at almost 500 % better than almost all pharmaceutical company, irrespective of any size, whatsoever. <br>
+                    <br>
+                    VCS has also achieved 100% satisfactory remuneration standard, by this all the employees
+                    get on time salary and other expenses, which cultivates all around satisfaction in our every employee. <br>
+                    <br>
+                    VCS initiates the cause for 100% quality control, all products ranging from Capsules to syrups, are best in quality and effectiveness thereby gaining the trust of top practicing doctors all over.
+                    <br> <br>
+                    VCS Pharmaceutical would be in operation and covering all of South Asian Region by 2020, which would be the first for any Indian Pharmaceutical company to achieve. <br>
+                    Also, with the energy and focus accompanied with total employee satisfaction is pushing the VCS team to unprecedented levels of growth and betterment. <br>
+                    <br>
+                    TEAMWORK MEANS MORE WE AND LESS ME!!
+                  </p>
+                  <a class="button button-default" data-text="GO BACK" ng-click="lessAboutUs()"><span>GO BACK</span></a>
+                </div>
+              </div>
+            </div>
+            <!-- end:isMoreAboutUs = true -->
+          </div>
+        </div>
+        <!-- eNd: About Us Section -->
+      </div>
+    </div>
+  </section>
+  <!-- End service section -->
+
+  <!-- Start call to action -->
+  <section id="call-to-action">
+    <img class="anotherBackground product1">
+    <div class="call-to-overlay">
+      <div class="container">
+        <div class="call-to-content wow fadeInUp">
+          <div class="title-area">
+            <h2 class="tittle">Our <span>Products</span></h2>
+            <span class="tittle-line"></span>
+          </div>
+          <a href="#" class="button button-default" data-text="Download E-brochure"><span>Download E-brochure</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End call to action -->
+
+  <!-- Therapies -->
+  <!-- Copy here -->
+  <section id="service">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="about-area">
+            <!-- isMoreAboutUs = false -->
+            <div class="row">
+              <div class="col-md-7 col-sm-6 col-xs-12">
+                <div class="about-right wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+                  <div class="title-area">
+                    <h2 class="tittle"><span>Therapies</span></h2>
+                    <span class="tittle-line"></span>
+                    <p align="justify">
+                      VCS PHARMACEUTICAL is a steadily growing Pharmaceutical company.Our focus departments are Respiratory,Dermatology &amp;&nbsp;Cosmetology, IVF, Neurology, Oncology, Opthalmology, Cardiology, Gastroenerology, Obstetrics &amp; Gynaecology,ENT, Dental, Urology, Orthopaedics, Endocrinology and offer world class products across these therapy segments.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 col-sm-6 col-xs-12">
+                <div class="about-left wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+                  <img src="assets/images/therapies_img.png" alt="Therapies Image">
+                  <!-- <a class="introduction-btn" href="#">Introduction</a> -->
+                </div>
+              </div>
+            </div>
+            <!-- end:isMoreAboutUs = false -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end: Copy here -->
+  <!-- end: Therapies -->
+  <!-- Start service section -->
+  <section id="careers" ng-controller="mainController">
+    <div class="container">
+      <div class="row">
+        <!-- isMoreCareerSection = false -->
+        <div class="col-md-12" ng-if="!(isMoreCareerSection)">
+          <div class="service-area wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+            <div class="title-area">
+              <h2 class="tittle">Career at <span>VCS</span></h2>
+              <span class="tittle-line"></span>
+              <p>VCS believes in recruiting exceptional talent and meritorious candidates, because we operate by the motto:</p>
+              <h4 class="service-title">“THERE IS NO ALTERNATIVE TO HARD WORK”</h4>
+              <p> &nbsp; </p>
+              <a class="button button-default" data-text="KNOW MORE" ng-click="moreCareerSection()"><span>KNOW MORE</span></a>
+            </div>
+            <!-- service content -->
+          </div>
+        </div>
+        <!--end:isMoreCareerSection = false -->
+        <!-- isMoreCareerSection = true -->
+        <div class="col-md-12" ng-if="isMoreCareerSection">
+          <div class="service-area wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+            <div class="title-area">
+              <h2 class="tittle">Career at <span>VCS</span></h2>
+              <span class="tittle-line"></span>
+              <p align="justify">One who is not shy of working hard, is the One who would ultimately succeed. <br>
+                Bearing in mind the importance of the same, career with VCS would not only bring ease in
+                operation because of the Administrative Decision Directive (ADD) but also multiply the possibility
+                of limitless growth for each and every employee. <br>
+                The company promotes the scheme of best in class incentives to its employees, and further implements to promote the Marketing Yearly Promotion (MYP) scheme, which would see monetary as well as designation promotion for those who achieve their entire yearly target graph.
+                Various Virtues of VCS:
+              </p>
+              <p>
+                <ul class="normalList">
+                  <li>Marketing Management operations, situated at Okhla Industrial Area, New Delhi.</li>
+                  <li>Operational statistical support from Logistics Melbourne, Australia.</li>
+                  <li>35% better remuneration for Sales Representative than industry standards.</li>
+                  <li>On time remuneration plus other expenses, providing 100% satisfaction.</li>
+                  <li>Competitive field assignment, and all backend support provided within 48 hours, so as create a hassle free working environment.</li>
+                  <li>All around team centric work provisions, online reporting as well as innovative marketing support.</li>
+                  <li>Comparative brand analysis, best in class packaging provides eased market acceptance.</li>
+                </ul>
+              </p>
+
+              <p align="justify">VCS has already achieved sturdy recruitment pattern, targeting to raise the block to hundreds of marketing employees within 500 days of its operation.
+                Future recruitment planned for almost 35+ new headquarters by end 2016 itself, which would account for astonishing growth of 10 new headquarters every 60 days.
+                <br>
+                Further career related information as well as future recruitments undertaken by VCS can always be enquired by way of electronic communication
+                i.e <a href="mailto:quarries@vcspharma.com">quarries@vcspharma.com</a>.</p>
+                <p> &nbsp; </p>
+                <a class="button button-default" data-text="GO BACK" ng-click="lessCareerSection()"><span>GO BACK</span></a>
+              </div>
+              <!-- service content -->
+            </div>
+          </div>
+          <!-- end:isMoreCareerSection = true -->
+        </div>
+      </div>
+    </section>
+    <!-- End service section -->
+    <!-- Start Contact section -->
+    <section id="contact" ng-controller="mainController">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="contact-left wow fadeInLeft">
+              <h2>Contact Us</h2>
+              <address class="single-address">
+                <h4>Postal address:</h4>
+                <p> VCS Pharmaceutical </p>
+                <p><small>Admin Office:</small> <br>
+                  B-194, Okhla Industrial area,<br>
+                  Phase-1, New Delhi - 110020<br> <br>
+                  <small>Branch Office:</small> <br>
+                  D-38, Sector-39, Noida- 201301 <br>
+                </p>
+              </address>
+              <address class="single-address">
+                <h4>Phone</h4>
+                <p>Phone Number: (+91) 8860613154</p>
+              </address>
+              <address class="single-address">
+                <h4>E-Mail</h4>
+                <p><a href="mailto:admin@vcspharmaceutical.com">admin@vcspharmaceutical.com</a></p>
+                <p><a href="mailto:sales@vcspharmaceutical.com">sales@vcspharmaceutical.com</a></p>
+                <p><a href="mailto:queries@vcspharmaceutical.com">queries@vcspharmaceutical.com</a></p>
+                <p><a href="mailto:info@vcspharmaceutical.com">info@vcspharmaceutical.com</a></p>
+              </address>
+            </div>
+          </div>
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <div class="contact-right wow fadeInRight">
+              <h2>Send a message</h2>
+              <!-- ng-if="" -->
+              <div class="resultJSON" ng-if="isResultJSON">
+                <div class="alert alert-dismissible alert-warning">
+                  <button ng-click="resetIsResultJSON()" type="button" class="close" data-dismiss="alert">&times;</button>
+                  <h4>Email Sent Successfully!</h4>
+                  <p>{{resultJSON.result}}</p>
+                </div>
+              </div>
+              <form class="contact-form">
+                <div class="form-group">
+                  <input ng-model="form.name" name="name" type="text" class="form-control" value="{{form.name}}">
+                </div>
+                <div class="form-group">
+                  <input ng-model="form.email" name="email" type="email" class="form-control" placeholder="Enter Email">
+                </div>
+                <div class="form-group">
+                  <textarea ng-model="form.subject" name="message" class="form-control"></textarea>
+                </div>
+                <!-- ng-class="{'button-disabled':!(form.email)}" -->
+                <button ng-click="submitForm(form)" ng-disabled="!(form.email)" data-text="SUBMIT" class="button button-default"><span>SUBMIT</span></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact section -->
+    <!-- Start Google Map -->
+    <section id="google-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28034.335955190374!2d77.27487935762076!3d28.560993319838627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce4751aa3f39f%3A0x5c10ed47eba39c7d!2sOkhla%2C+New+Delhi%2C+Delhi!5e0!3m2!1sen!2sin!4v1465869996133" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+    <!-- End Google Map -->
+
+    <!-- Start Footer -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="footer-top-area">
+                <div class="footer-social">
+                  <a class="facebook" href="https://www.facebook.com/VCSPharamaceutical/" target="_blank"><span class="fa fa-facebook"></span></a>
+                  <!-- <a class="google-plus" href="#"><span class="fa fa-google-plus"></span></a> -->
+                  <a class="linkedin" href="https://in.linkedin.com/in/admin-vcs-pharmaceutical-990035119" target="_blank"><span class="fa fa-linkedin"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy;2016 Designed by <a rel="nofollow" href="http://www.innovoskies.com/">Innovoskies</a></p>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- initialize jQuery Library -->
+    <script src="assets/js/jquery-1.11.2.min.js"></script>
+    <script src="assets/js/angular.min.js"></script>
+    <script src="assets/js/angular-animate.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/controllers/mainController.js"></script>
+    <script src="assets/js/services/dataService.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.js"></script>
+    <!-- Slick Slider -->
+    <script type="text/javascript" src="assets/js/slick.js"></script>
+    <!-- Counter -->
+    <script type="text/javascript" src="assets/js/waypoints.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.counterup.js"></script>
+    <!-- mixit slider -->
+    <script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
+    <!-- Add fancyBox -->
+    <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+    <!-- Wow animation -->
+    <script type="text/javascript" src="assets/js/wow.js"></script>
+    <!-- Custom js -->
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+    <!-- Custom javascript -->
+  </body>
+  </html>
