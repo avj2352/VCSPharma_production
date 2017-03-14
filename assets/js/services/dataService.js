@@ -28,7 +28,7 @@
 	        console.log('Error - dataService:sendEmailFrom: ', status);
 	      });
 	      return promise;
-			};//end:sendEmailFrom()
+			}//end:sendEmailFrom()
 
     }//endservice:dataService()
 }());//IIFE

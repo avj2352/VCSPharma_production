@@ -13,13 +13,7 @@ function createJSON($name,$email,$message){
   echo json_encode($status);
 }/*end:createJSON()*/
 
-    /*STEP1: Get the XHR Request*/
-    // $initName = $_POST['name'] or $_REQUEST['name'];
-    // $initEmail = $_POST['email'] or $_REQUEST['email'];
-    // $initMsg = $_POST['message'] or $_REQUEST['message'];
-    // $initName = $_POST['name'] or $_REQUEST['name'];
-    // $initEmail = $_POST['email'] or $_REQUEST['email'];
-    // $initMsg = $_POST['message'] or $_REQUEST['message'];
+    /*STEP1: Get the XHR Request*/    
     $name = @trim(stripslashes($_REQUEST['name']));
     $email = @trim(stripslashes($_REQUEST['email']));
     $message = @trim(stripslashes($_REQUEST['message']));
